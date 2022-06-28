@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+</head>
+<body style="display: flex;align-items: center;justify-content: center;">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        </style>
+
+    <div id="100" style="font-family: 'Open Sans', sans-serif;font-size: 50px;font-weight:900 ;"></div>
+
+    <script>
+        var elem = document.getElementById("100")        
+        setInterval(update, 1000);
+        var i=100;
+
+        function update() {
+            elem.innerHTML= i;
+            document.title = i
+
+            i--;
+            if(i==0)
+            {
+                i=100;
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
